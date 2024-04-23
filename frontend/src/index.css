@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar h1 {
+  color: #9310bf;
+}
+
+.navbar .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar .search {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover {
+  color: #9310bf;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: start;
+}
+
+/* book previews / list */
+.book-list > h2 {
+  padding-left: 20px;
+  margin-top: 40px;
+}
+
+.book-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+  position: relative;
+}
+
+.book-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+
+.book-preview h2 {
+  font-size: 20px;
+  color: #9310bf;
+  margin-bottom: 8px;
+}
+
+.book-preview p {
+  margin-bottom: 8px;
+}
+
+.book-preview .book-status {
+  color: white;
+  background-color: #cf66f2;
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.book-status-icon{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: #bf5ae1;
+  color: white; 
+  padding: 5px;
+  border-radius: 8px;
+}
+
+/* Search Bar Component Styles */
+.search-wrapper {
+  padding: 0 10px;
+  border-bottom: 1px solid #fafafa;
+  max-width: 800px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px; 
+  border: 1px solid #fafafa; 
+  border-radius: 4px; 
+  font-size: 16px; 
+  color: #999;
+  outline: none; 
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1); 
+}
+
+/* Pagination Component Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 0; 
+  padding: 0; 
+}
+
+.pagination a {
+  margin: 5px; 
+  cursor: pointer; 
+  padding: 5px 10px;
+  border: 1px solid #fafafa;
+  border-radius: 4px; 
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1); 
+  color: #ca89df;
+}
+
+.pagination a.active {
+  background-color: #ca89df;
+  color: white;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.content h1 {
+  text-align: center;
+}
+
+.login-form input {
+  margin: 20px auto;
+  width: 97%;
+  height: 30px;
+  border: 1px solid #9b9797;
+  border-radius: 8px;
+  padding: 0 5px;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1); 
+}
+
+.login-form button {
+  background-color: white;
+  font-size: inherit; 
+  outline: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #9b9797;
+  border-radius: 8px; 
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1); 
+  color: #9310bf;
+  
+  margin: 20px 0;
+}
